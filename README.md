@@ -45,3 +45,11 @@ Your work will be automatically submitted when you push to your GitHub Classroom
 - [MongoDB Documentation](https://docs.mongodb.com/)
 - [MongoDB University](https://university.mongodb.com/)
 - [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
+
+# WEEK 1 ASSIGNMENT
+## SET UP
+ - initialize node js using `npm init -y `
+     this will set up the environment
+ - install mongodb using `npm i mongodb`
+ - Run the file using `node insert_books.js`
+
