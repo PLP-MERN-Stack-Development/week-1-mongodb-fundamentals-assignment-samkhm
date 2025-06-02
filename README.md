@@ -43,3 +43,5 @@ The script performs the following actions:
 *   Creates single and compound `index`es to improve query performance.
 *   Uses the `explain()` method to analyze query execution plans.
 
+
+![MongoDB ScreenShot](image.png)
