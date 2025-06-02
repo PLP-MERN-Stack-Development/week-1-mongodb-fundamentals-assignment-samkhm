@@ -1,55 +1,45 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19666296&assignment_repo_type=AssignmentRepo)
-# MongoDB Fundamentals Assignment
-
-This assignment focuses on learning MongoDB fundamentals including setup, CRUD operations, advanced queries, aggregation pipelines, and indexing.
-
-## Assignment Overview
-
-You will:
-1. Set up a MongoDB database
-2. Perform basic CRUD operations
-3. Write advanced queries with filtering, projection, and sorting
-4. Create aggregation pipelines for data analysis
-5. Implement indexing for performance optimization
-
-## Getting Started
-
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
-
-## Files Included
-
-- `Week1-Assignment.md`: Detailed assignment instructions
-- `insert_books.js`: Script to populate your MongoDB database with sample book data
-
-## Requirements
-
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- MongoDB Shell (mongosh) or MongoDB Compass
-
-## Submission
-
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
-
-1. Complete all tasks in the assignment
-2. Add your `queries.js` file with all required MongoDB queries
-3. Include a screenshot of your MongoDB database
-4. Update the README.md with your specific setup instructions
-
-## Resources
-
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [MongoDB University](https://university.mongodb.com/)
-- [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
-
 # WEEK 1 ASSIGNMENT
 ## SET UP
  - initialize node js using `npm init -y `
      this will set up the environment
  - install mongodb using `npm i mongodb`
  - Run the file using `node insert_books.js`
+
+# MongoDB Bookstore Queries
+
+This script contains a series of MongoDB shell commands designed to interact with a database named `plpbookstore` and a collection named `books`. It demonstrates various common MongoDB operations including data insertion, querying, updating, deleting, aggregation, and indexing.
+
+## Prerequisites
+
+Before running this script, ensure you have the following installed and running:
+
+*   **MongoDB Server:** The database server where your data will be stored.
+*   **MongoDB Shell (`mongosh`):** The command-line interface used to connect to MongoDB and execute commands.
+
+## How to Run
+
+1.  **Save the code:** Save the provided JavaScript code into a file named `queries.js` (or any other name you prefer) on your computer.
+2.  **Open your terminal:** Navigate to the directory where you saved the `queries.js` file using your terminal or command prompt.
+3.  **Execute the script:** Run the following command using the MongoDB Shell:
+
+    ```bash
+    mongosh queries.js
+    ```
+
+    This command will connect to your local MongoDB instance (by default on `mongodb://localhost:27017`) and execute the commands in the `queries.js` file sequentially.
+
+Alternatively, you can connect to your MongoDB instance first using `mongosh` and then paste the contents of the `queries.js` file directly into the shell.
+
+## Script Overview
+
+The script performs the following actions:
+
+*   Switches to or creates the `plpbookstore` database.
+*   Inserts 10 sample book documents into the `books` collection.
+*   Demonstrates various `find` queries to retrieve data based on criteria.
+*   Shows how to `update` documents.
+*   Includes a command to `delete` documents.
+*   Provides examples of `aggregate` pipelines for data analysis (average price by genre, author with most books, books by publication decade).
+*   Creates single and compound `index`es to improve query performance.
+*   Uses the `explain()` method to analyze query execution plans.
 
